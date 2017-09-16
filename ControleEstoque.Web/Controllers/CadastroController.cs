@@ -8,12 +8,13 @@ namespace ControleEstoque.Web.Controllers
 {
     public class CadastroController : Controller
     {
-        // GET: Cadastro
+        [Authorize]
         public ActionResult GrupoProduto()
         {
             return View();
         }
-        // GET: Cadastro
+
+        [Authorize]
         public ActionResult MarcaProduto()
         {
             return View();
